@@ -5,6 +5,8 @@ import NavBar from "@/components/general/navbar";
 import Slack from "@/components/layout/slack";
 import Title from "@/components/typo/title";
 import FloatingImage from "@/components/general/story";
+import Contact from "@/components/general/contact";
+import Footer from "@/components/general/footer";
 
 const Home = () => {
     return (
@@ -14,6 +16,8 @@ const Home = () => {
             <About />
             <Features />
             <FloatingImage />
+            <Contact />
+            <Footer />
         </section>
     );
 };
