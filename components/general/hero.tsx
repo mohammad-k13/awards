@@ -15,7 +15,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(1);
   const [hasClicked, setHasClicked] = useState(false);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
 
   const totalVideos: number = 4;
@@ -26,8 +26,8 @@ const Hero = () => {
   };
 
   useEffect(() => {
+    setLoading(false);
     if (loadedVideos === totalVideos - 1) {
-      setLoading(false);
     }
   }, [loadedVideos]);
 
