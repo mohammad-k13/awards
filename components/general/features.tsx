@@ -7,7 +7,7 @@ export const BentoTilt = ({ children, className = "" }: {children: ReactNode, cl
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef<any>(null);
 
-  const handleMouseMove = (event: MouseEventHandler<HTMLDivElement>) => {
+  const handleMouseMove = (event: any) => {
     if (!itemRef.current) return;
 
     const { left, top, width, height } =
